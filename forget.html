@@ -1,0 +1,185 @@
+<html>
+<title>
+Change Password
+</title>
+<head>
+<link rel="icon" type="image/x-icon" href="baby1.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+function sub()
+{
+document.getElementById("pos").style.display="block";
+document.getElementById("fie").style.height="250px";
+document.getElementById("pos1").style.display="none";
+}
+</script>
+</head>
+<style>
+body
+{
+background-image:url('born.jpg');
+background-size:100% 100%;
+overflow-y:auto;
+overflow-x:auto;
+}
+#align
+{
+display:block;
+text-align:center;
+font-size:30px;
+font-family:Comic Sans MS;
+}
+#fie
+{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+height:280px;
+width:380px;
+border-radius:10px;
+background-color:#DCDCDC;
+box-shadow: 3px 3px 3px 3px #888888 ,3px 3px 3px red;
+}
+input
+{
+margin:5px 0px 5px 85px;
+padding:0px 0px 0px 10px;
+height:25px;
+width:250px;
+border-radius:5px;
+border:none;
+}
+label
+{
+margin:10px 0px 0px 10px;
+font-size:15px;
+}
+#pi
+{
+margin:10px 0px 10px 5px;
+padding:0px 0px 0px 10px;
+height:25px;
+width:100px;
+border-radius:5px;
+border:none;
+}
+button
+{
+height:22px;
+width:100px;
+margin-bottom:10px;
+margin-left:auto;
+margin-right:auto;
+border:none;
+background-color:blue;
+color:white;
+border-radius:5px;
+cursor:pointer;
+box-shadow: 0 5px 8px 0 black, 0 5px 8px 0 red;
+}
+.ali
+{
+display:block;
+padding:10px 0px 0px 110px;
+}
+#done
+{
+height:25px;
+width:150px;
+}
+#dons
+{
+height:25px;
+width:150px;
+}
+button:hover
+{
+background-color:gray;
+}
+button:active
+{
+background-color:black;
+color:white;
+}
+#pos1
+{
+display:block;
+}
+#pos
+{
+display:none;
+}
+#new
+{
+margin:0px 0px 0px 20px;
+}
+#foot
+{
+position:fixed;
+bottom:0%;
+background-color:#68F480;
+color:white;
+width:100%;
+text-align:center;
+}
+#fot
+{
+opacity:0.5;
+}
+#fot:hover
+{
+opacity:1;
+cursor:pointer;
+}
+@media only screen and (max-width:800px)
+{
+#fot
+{
+opacity:1;
+}
+}
+</style>
+<body>
+<fieldset id="fie">
+<div id="align">
+<b>Password Generation</b>
+</div>
+<div id="pos1">
+<label><b>Enter your Mail Id:</b></label><br>
+<input type="mail" placeholder="Mail ID"><br>
+<span id="mail"></span>
+<div class="ali">
+<button id="pis"><b>Send OTP</b></button>
+</div>
+<div>
+<label><b>Enter OTP :</b></label>
+<input type="password" name="pin" maxlength="4" id="pi"> <button id="new"><b>Resend OTP</b></button>
+<span id="otp"></span>
+</div>
+<div class="ali">
+<button onclick="sub()" id="done"><b>Submit</b></button>
+</div>
+</div>
+<div id="pos">
+<label><b>Password:</b></label>
+<input type="password" placeholder="Password"><br>
+<label><b>Confirm Password:</b></label>
+<input type="password" placeholder="Confirm Password"><br>
+<span id="same"></span>
+<div class="ali">
+<button id="dons"><b>Save Now !</b></button>
+</div>
+</div>
+</fieldset>
+</body>
+<div id="foot">
+<footer>
+<i>Powered By </i><span id="fot" onclick="location='https://www.instagram.com/aravind_leesh?r=nametag'" target="_blank"><b>" Berk Buddies "</b></span>
+</footer>
+</div>
+</html>
