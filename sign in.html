@@ -41,6 +41,18 @@ trap()
 }
 });
 });
+  $(function()
+{
+$(window).scroll(function() 
+{
+if($(".navbar-collapse").hasClass("in")==true)
+{
+$(".navbar-toggle")[0].click();
+a=1;
+trap()
+}
+});
+});
 </script> 
 </head>
 <style>
